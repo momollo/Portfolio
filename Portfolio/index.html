@@ -1,0 +1,76 @@
+<!-- FILE: index.html -->
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mon Portfolio — Accueil</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/png" href="photo/ecto.png">
+</head>
+<body>
+<header class="site-header">
+<div class="container">
+<h1 class="logo">Mon Portfolio</h1>
+<nav class="nav">
+<a href="index.html" class="nav-link">Accueil</a>
+<a href="recette.html" class="nav-link">livre de recette</a>
+<a href="Praxedo.html" class="nav-link">Praxedo</a>
+<a href="DRASI.html" class="nav-link">DRASI</a>
+<a href="CV.html" class="nav-link">CV</a>
+<a href="contact.html" class="nav-link">Contact</a>
+<a href="GRR.html" class="nav-link">GRR</a>
+
+</nav>
+</div>
+</header>
+
+
+<main class="container">
+<section class="hero">
+<h2>Bonjour — je suis Morel Maxence</h2>
+<p>Bienvenue sur mon portfolio. Voici quelques projets récents et informations me concernant.</p>
+</section>
+<section class="grid">
+<article class="card">
+<h3>livre de recette</h3>
+<p>un site de recettes de cuisine collaboratif.</p>
+<p><a href="recette.html">En savoir +</a></p>
+</article>
+<article class="card">
+<h3>Praxedo</h3>
+<p>Courte description du projet B.</p>
+<p><a href="Praxedo.html">En savoir +</a></p>
+</article>
+<article class="card">
+<h3>DRASI</h3>
+<p>site vitre de la DRASI.</p>
+<p><a href="DRASI.html">En savoir +</a></p>
+</article>
+<article class="card">
+<h3>GRR</h3>
+<p>Gerstionaire de Resource et de Réservation.</p>
+<p><a href="GRR.html">En savoir +</a></p>
+</article>
+<article class="card">
+<h3>Mon Curriculum Vitae</h3>
+<p>résumé de mon parcour scolaire et profesionelle.</p>
+<p><a href="CV.html">En savoir +</a></p>
+</article>
+</section>
+</main>
+
+
+<footer class="site-footer">
+<div class="container">
+<p>© <span id="year"></span> — Mon Portfolio • <a href="contact.html">Contact</a></p>
+</div>
+</footer>
+
+
+<script>
+// met à jour l'année automatiquement
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

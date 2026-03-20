@@ -1,0 +1,21 @@
+<!--file:css/style.css
+/* Reset simple */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; line-height:1.5; color:#222; background:#f7f7f7; }
+.container { max-width:1000px; margin:0 auto; padding:20px; }
+.site-header { background:#fff; border-bottom:1px solid #e6e6e6; }
+.site-header .container { display:flex; align-items:center; justify-content:space-between; }
+.logo { font-size:1.25rem; }
+.nav { display:flex; gap:12px; }
+.nav-link { text-decoration:none; color:#333; padding:12px 8px; border-radius:8px; }
+.nav-link:hover { background:#f0f0f0; }
+.hero { background:#fff; padding:40px; margin-top:20px; border-radius:12px; box-shadow:0 6px 16px rgba(0,0,0,0.04); }
+.hero h2 { font-size:1.6rem; margin-bottom:8px; }
+.btn { display:inline-block; padding:10px 14px; text-decoration:none; border-radius:8px; background:#111; color:#fff; margin-top:10px; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:16px; margin:20px 0; }
+.card { background:#fff; padding:16px; border-radius:10px; box-shadow:0 6px 12px rgba(0,0,0,0.03); }
+.site-footer { text-align:center; padding:18px 0; margin-top:30px; color:#666; }
+
+
+/* Responsive small screens */
+@media (max-width:640px){ .site-header .container{flex-direction:column; gap:8px;} .nav{flex-wrap:wrap; justify-content:center;} }
