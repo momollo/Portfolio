@@ -1,35 +1,32 @@
-
-
-<!-- FILE: page1.html -->
+<!-- FILE: page3.html -->
 <!doctype html>
 <html lang="fr">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Livre de recette</title>
+<title>DRASI</title>
 <link rel="stylesheet" href="style.css">
 <link rel="icon" type="image/png" href="photo/ecto.png">
 
 </head>
 <body>
-<header class="site-header">
-<div class="container">
-<h1 class="logo">Mon Portfolio</h1>
-<nav class="nav">
-<a href="index.html" class="nav-link">Accueil</a>
-<a href="recette.html" class="nav-link">livre de recette</a>
-<a href="Praxedo.html" class="nav-link">Praxedo</a>
-<a href="DRASI.html" class="nav-link">DRASI</a>
-<a href="CV.html" class="nav-link">CV</a>
-<a href="contact.html" class="nav-link">Contact</a>
-<a href="GRR.html" class="nav-link">GRR</a>
-</nav>
-</div>
-</header>
+<div id="header"></div>
+
+<script>
+fetch("header.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("header").innerHTML = data;
+  });
+</script>
 
 
 <main class="container">
-       <section class="card">
+<section class="card">
+<h2>DRASI</h2>
+<p>Le site que j’ai réalisé lors de mon stage à la DRASI est un site vitrine permettant de présenter leurs missions, leur équipe et leurs lieux d’intervention.</p>
+<section class="card">
+</section>
 <h2>Livre de recette</h2>
 <p>Le livre de recette est un site de recettes de cuisine collaboratif, développé sous Laravel lors de la deuxième année du BTS SIO. Il a été réalisé dans le cadre des deux projets à présenter pour l’épreuve du bloc 2, en collaboration avec mes différents collègues de formation.</p>
 <p><a class="btn" href="index.html">Retour à l'accueil</a></p>
@@ -39,9 +36,9 @@
 
 <footer class="site-footer">
 <div class="container">
-<p>© <span id="year2"></span> — Mon Portfolio</p>
+<p>© <span id="year3"></span> — Mon Portfolio</p>
 </div>
 </footer>
-<script>document.getElementById('year2').textContent = new Date().getFullYear();</script>
+<script>document.getElementById('year3').textContent = new Date().getFullYear();</script>
 </body>
 </html>

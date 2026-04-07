@@ -9,21 +9,15 @@
 <link rel="icon" type="image/png" href="photo/ecto.png">
 </head>
 <body>
-<header class="site-header">
-<div class="container">
-<h1 class="logo">Mon Portfolio</h1>
-<nav class="nav">
-<a href="index.html" class="nav-link">Accueil</a>
-<a href="recette.html" class="nav-link">livre de recette</a>
-<a href="Praxedo.html" class="nav-link">Praxedo</a>
-<a href="DRASI.html" class="nav-link">DRASI</a>
-<a href="CV.html" class="nav-link">CV</a>
-<a href="contact.html" class="nav-link">Contact</a>
-<a href="GRR.html" class="nav-link">GRR</a>
+<div id="header"></div>
 
-</nav>
-</div>
-</header>
+<script>
+fetch("header.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("header").innerHTML = data;
+  });
+</script>
 
 
 <main class="container">
@@ -33,19 +27,14 @@
 </section>
 <section class="grid">
 <article class="card">
-<h3>livre de recette</h3>
-<p>un site de recettes de cuisine collaboratif.</p>
-<p><a href="recette.html">En savoir +</a></p>
+<h3>Project BTS SIO</h3>
+<p>Une présentation de mes deux projets que j’ai eu à présenter lors de mon épreuve de BTS SIO.</p>
+<p><a href="Project BTS SIO.html">En savoir +</a></p>
 </article>
 <article class="card">
 <h3>Praxedo</h3>
 <p>logicel de planification.</p>
 <p><a href="Praxedo.html">En savoir +</a></p>
-</article>
-<article class="card">
-<h3>DRASI</h3>
-<p>site vitre de la DRASI.</p>
-<p><a href="DRASI.html">En savoir +</a></p>
 </article>
 <article class="card">
 <h3>GRR</h3>

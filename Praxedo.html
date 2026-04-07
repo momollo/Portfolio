@@ -14,18 +14,15 @@
 
 </head>
 <body>
-<header class="site-header">
-<div class="container">
-<h1 class="logo">Mon Portfolio</h1>
-<nav class="nav">
-<a href="index.html" class="nav-link">Accueil</a>
-<a href="recette.html" class="nav-link">livre de recette</a>
-<a href="Praxedo.html" class="nav-link">Praxedo</a>
-<a href="DRASI.html" class="nav-link">DRASI</a>
-<a href="CV.html" class="nav-link">CV</a>
-<a href="contact.html" class="nav-link">Contact</a>
-<a href="GRR.html" class="nav-link">GRR</a>
+<div id="header"></div>
 
+<script>
+fetch("header.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("header").innerHTML = data;
+  });
+</script>
 </nav>
 </div>
 </header>
@@ -33,8 +30,8 @@
 
 <main class="container">
 <section class="card">
-<h2>Projet B</h2>
-<p>Description détaillée du projet B.</p>
+<h2>Praxedo</h2>
+<p>Praxedo est un logiciel professionnel utilisé par les entreprises qui ont des équipes sur le terrain .</p>
 <p><a class="btn" href="index.html">Retour à l'accueil</a></p>
 </section>
 </main>
