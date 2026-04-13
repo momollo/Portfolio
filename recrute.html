@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Accueil</title>
+
+    <link rel="stylesheet" href="recrut.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div id="header"></div>
+
+<script>
+    fetch("header.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("header").innerHTML = data;
+    });
+  </script>
+<button id="boutonGrossie">oui  </button>
+<button id="boutonFuyant">non </button>
+
+
+<script src="recrut.js"></script>
+<script>document.getElementById('year3').textContent = new Date().getFullYear();</script>
+
+</body>
+</html>

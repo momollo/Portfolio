@@ -1,0 +1,38 @@
+body {
+  cursor: default;
+}
+
+/* Active le mode arc-en-ciel */
+body.rainbow-cursor {
+  cursor: none;
+}
+
+/* Faux curseur */
+.rainbow-dot {
+  animation: fonduClignote 5s infinite;
+  position: fixed;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  pointer-events: none;
+  background: linear-gradient(45deg, red, orange, yellow, green, blue, purple);
+  z-index: 9999;
+}
+
+@keyframes fonduClignote {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0px);
+  }
+  50% {
+    opacity: 0.2;
+    transform: scale(1.5);
+    filter: blur(2px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0px);
+  }
+}
