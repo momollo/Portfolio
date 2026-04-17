@@ -6,11 +6,12 @@
     <title>Accueil</title>
 
     <link rel="stylesheet" href="recrut.css">
-    <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
-    <div id="header"></div>
+    
+    <main class="container">
+  <h1>vouller vous me recruté ?</h1>
 
 <script>
     fetch("header.html")
@@ -19,8 +20,9 @@
       document.getElementById("header").innerHTML = data;
     });
   </script>
-<button id="boutonGrossie">oui  </button>
-<button id="boutonFuyant">non </button>
+<button id="boutonGrossie">oui</button>
+
+<button id="boutonFuyant">non</button>
 
 
 <script src="recrut.js"></script>

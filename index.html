@@ -67,10 +67,10 @@ document.getElementById('year').textContent = new Date().getFullYear();
 <script>
   let typed = "";
 
-document.addEventListener("keydown", (e) => {
-  console.log(e.key);
+document.addEventListener("keydown", (r) => {
+  console.log(r.key);
 
-  typed += e.key.toLowerCase();
+  typed += r.key.toLowerCase();
   typed = typed.slice(-6); // "recrut"
 
   if (typed === "recrut") {

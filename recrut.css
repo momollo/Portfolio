@@ -3,11 +3,18 @@ body {
     height: 100vh;
     overflow: hidden;
 }
+.container { 
+    top: 40%; 
+    left: 55%;
+    color:rgb(153, 27, 132);
+    padding: 250px 600px;
+    font-size: 18px;
+    max-width:2000px; margin:0 auto; }
 
 #boutonFuyant {
     top: 50%;
     left: 55%;
-    position: absolute;
+    position: absolute; 
     padding: 20px 40px;
     font-size: 18px;
     cursor: pointer;

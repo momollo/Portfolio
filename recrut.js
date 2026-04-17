@@ -21,4 +21,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     boutonFuyant.addEventListener("mouseenter", bougeBouton);
+    
+});
+
+document.getElementById("boutonGrossie").addEventListener("click", () => {
+    window.location.href = "https://www.youtube.com/watch?v=Aq5WXmQQooo";
 });
