@@ -24,6 +24,15 @@ document.addEventListener("DOMContentLoaded", () => {
     
 });
 
-document.getElementById("boutonGrossie").addEventListener("click", () => {
-    window.location.href = "https://www.youtube.com/watch?v=Aq5WXmQQooo";
+document.getElementById('boutonGrossie').addEventListener('click', () => {
+  document.getElementById('popupOui').style.display = 'flex';
+});
+
+function fermerPopup() {
+  document.getElementById('popupOui').style.display = 'none';
+}
+
+// Fermer en cliquant en dehors
+document.getElementById('popupOui').addEventListener('click', (e) => {
+  if (e.target === e.currentTarget) fermerPopup();
 });

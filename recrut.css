@@ -6,7 +6,6 @@ body {
 .container { 
     top: 40%; 
     left: 55%;
-    color:rgb(153, 27, 132);
     padding: 250px 600px;
     font-size: 18px;
     max-width:2000px; margin:0 auto; }
@@ -30,4 +29,57 @@ position: absolute;
     font-size: 18px;
     cursor: pointer;
     transition: all 0.4s ease; /* animation fluide */
+}
+/* Overlay sombre */
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+}
+
+/* Boîte blanche */
+.popup-box {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  max-width: 360px;
+  width: 90%;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+  animation: popIn 0.3s ease;
+}
+
+@keyframes popIn {
+  from { transform: scale(0.7); opacity: 0; }
+  to   { transform: scale(1);   opacity: 1; }
+}
+
+/* Bouton fermeture */
+.popup-close {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.9rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #888;
+}
+.popup-close:hover { color: #000; }
+
+/* GIF */
+.popup-gif {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+/* Texte */
+.popup-texte {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
 }
