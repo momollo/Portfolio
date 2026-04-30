@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
         boutonFuyant.style.left = x + "px";
         boutonFuyant.style.top = y + "px";
 
-        // 👉 Le 2e bouton grossit
+        // Le 2e bouton grossit
         scale += 0.5;
         boutonGrossie.style.transform = "scale(" + scale + ")";
     }
