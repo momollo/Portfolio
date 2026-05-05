@@ -11,7 +11,7 @@ body {
     max-width:2000px; margin:0 auto; }
 
 #boutonFuyant {
-    top: 50%;
+    top: 60%;
     left: 55%;
     position: absolute; 
     padding: 20px 40px;
@@ -23,7 +23,7 @@ body {
 #boutonGrossie{
 position: absolute;
     transition: transform 0.3s ease;
-    top: 50%;
+    top: 60%;
     left: 35%;
     padding: 20px 40px;
     font-size: 18px;

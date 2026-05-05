@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Accueil</title>
+
+    <link rel="stylesheet" href="yuyu.css">
+
+</head>
+<body>
+    
+    <main class="container">
+  <h1>Veux-tu continuer cette merveilleuse aventure avec moi ? ;)</h1>
+
+<script>
+    fetch("header.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("header").innerHTML = data;
+    });
+  </script>
+<button id="boutonGrossie">oui</button>
+  <div id="popupOui" class="popup-overlay" style="display:none;">
+  <div class="popup-box">
+    <span class="popup-close" onclick="fermerPopup()">✕</span>
+     <video class="popup-gif" autoplay loop muted playsinline>
+    <source src="photo/yuyu.mp4" type="video/mp4">
+  </video>
+    <p class="popup-texte">Je le savaiiiiiis !! ;)))</p>
+  </div>
+</div>
+
+<button id="boutonFuyant">non</button>
+
+
+<script src="recrut.js"></script>
+<script>document.getElementById('year3').textContent = new Date().getFullYear();</script>
+
+</body>
+</html>
